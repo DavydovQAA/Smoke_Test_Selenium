@@ -1,1 +1,1 @@
-# Smoke_Testing_Shop_Selenium
+# Smoke_Test_Selenium
