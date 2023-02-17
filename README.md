@@ -1,1 +1,1 @@
-# Smoke_Test_Selenium
+# Smoke_Test_Selenium for shop
