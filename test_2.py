@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from login_page import Login_page
 
 
-class Test_1():
+class Test_2():
 
     def test_select_product(self):
         driver = webdriver.Chrome()
@@ -18,11 +18,11 @@ class Test_1():
 
         print("Start Test")
 
-        login_standart_user = 'standard_user'
+        login_problem_user = 'problem_user'
         password_all = 'secret_sauce'
 
         login = Login_page(driver)
-        login.authorization(login_name='standard_user', login_password='secret_sauce')
+        login.authorization(login_problem_user, password_all)
 
         select_product = WebDriverWait(driver, 30).until(EC.element_to_be_clickable((By.XPATH, '//button[@id="add-to-cart-sauce-labs-backpack"]')))
         select_product.click()
@@ -38,6 +38,6 @@ class Test_1():
         assert value_success_test == "YOUR CART"
         print('Test Success')
 
-test = Test_1()
-test.test_select_product()
 
+test = Test_2()
+test.test_select_product()
